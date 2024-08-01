@@ -1,0 +1,13 @@
+{
+  "name": "passager-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "docker build -t mongo-backup-image .",
+    "backup": "docker run --env-file .env -v $(pwd)/backup:/backup mongo-backup-image"
+  },
+  "author": "",
+  "license": "ISC"
+}
